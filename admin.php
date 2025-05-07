@@ -8,7 +8,9 @@ if (!isset($_SESSION['admin'])) {
 require_once 'Database.php';
 $db = new Database();
 
-$result = $db->query("SELECT * FROM feedback ORDER BY created_at DESC");
+$query = "SELECT * FROM feedback ORDER BY created_at DESC";
+$result = $db->conn->query($query);
+
 ?>
 <!DOCTYPE html>
 <html lang="et">
