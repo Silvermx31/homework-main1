@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-    private $dbname = "feedbackdb";
+    private $dbname = "feedback_db";
     public $conn;
 
     public function __construct() {
